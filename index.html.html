@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Debbies Beauty Empire | No. 1 Mobile Salon in Abuja</title>
+<meta name="description" content="Mobile hair salon in Abuja. Braids, twists, locs and hair extensions at your door step.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbeff3;--ink:#2b0f26;--card:#fff;--accent:#c2255c;--gold:#9a6f1c;--muted:#6d4c63;--line:#ecd3de}
+@media (prefers-color-scheme:dark){:root{--bg:#1d0a1a;--ink:#fbeff3;--card:#2b1227;--muted:#d1aec3;--line:#4a2342;--gold:#e0b25a;--accent:#ee5f92}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,sans-serif;line-height:1.5;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;max-width:980px;margin:0 auto}
+header b{font-family:'DM Serif Display',serif;font-size:1.2rem;font-weight:400}
+header a{font-size:.9rem;text-decoration:none;border:1px solid var(--line);padding:8px 14px;border-radius:99px}
+.hero{padding:30px 0 40px}
+.hero h1{font-size:clamp(2.4rem,9vw,4.6rem);max-width:13ch}
+.hero p{max-width:36ch;color:var(--muted);font-size:1.1rem;margin:16px 0 24px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:#fff;border:0;padding:13px 22px;border-radius:99px;font:600 1rem Outfit,sans-serif;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+section{padding:38px 0;border-top:1px solid var(--line)}
+section>h2,.wrap>section>h2{font-size:2rem;margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 18px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:2}
+.chips a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:.9rem;background:var(--card)}
+.cat{margin:26px 0 12px;font-size:1.5rem}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+.grid:not(.open)>.item.x{display:none}
+.more{display:block;margin:12px auto 0;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:99px;padding:9px 22px;font:500 .95rem Outfit,sans-serif;cursor:pointer}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.img{aspect-ratio:4/5;background:linear-gradient(145deg,#c2255c,#2b0f26);position:relative;display:grid;place-items:center;color:#fff}
+.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.img span{font-family:'DM Serif Display',serif;font-size:1.1rem;text-align:center;padding:10px;opacity:.9}
+.body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.body h3{font-size:1.05rem;font-family:Outfit,sans-serif;font-weight:500;line-height:1.25}
+.price{color:var(--gold);font-weight:600}
+.body button{margin-top:auto;background:var(--ink);color:var(--bg);border:0;border-radius:99px;padding:9px;font:500 .9rem Outfit,sans-serif;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+form{display:grid;gap:12px;max-width:520px}
+label{font-weight:500;font-size:.95rem;display:grid;gap:4px}
+input,select,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:100%}
+#cart{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom,0px));margin-top:20px;background:var(--ink);color:var(--bg);border-radius:16px;padding:12px 14px;display:none;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+#cart small{display:block;opacity:.85}
+#cart .btn{padding:10px 18px}
+.how{display:grid;gap:12px;padding:0;list-style:none;counter-reset:s}
+.how li{counter-increment:s;padding-left:38px;position:relative}
+.how li::before{content:counter(s);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:600}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<header><b>Debbies Beauty Empire</b><a href="tel:+2347047299257">Call us</a></header>
+<main class="wrap">
+<div class="hero">
+<h1>No. 1 mobile salon in Abuja.</h1>
+<p>Bringing comfort to your door step. Book a stylist or order hair extensions.</p>
+<div class="btns"><a class="btn" href="#services">See styles and prices</a><a class="btn alt" href="#shop">Shop extensions</a></div>
+</div>
+
+<section id="services">
+<h2>Home services</h2>
+<p class="sub">Tap Book on the style you want. Prices are in Naira.</p>
+<div class="chips" id="chips"></div>
+<div id="svc"></div>
+</section>
+
+<section id="shop">
+<h2>Hair shop</h2>
+<p class="sub">Add items, then send your order on WhatsApp. We confirm delivery and payment with you.</p>
+<div class="grid" id="products"></div>
+<div id="cart"><div><strong id="cnt"></strong><small id="tot"></small></div><div><button class="btn alt" id="clr" type="button" style="color:var(--bg);border-color:var(--bg)">Clear</button> <a class="btn" id="send" href="#" target="_blank" rel="noopener">Order on WhatsApp</a></div></div>
+</section>
+
+<section id="book">
+<h2>Book a home visit</h2>
+<p class="sub">This opens WhatsApp with your details ready to send.</p>
+<form id="bf">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Style<select name="s" id="sel"></select></label>
+<label>Preferred date<input type="date" name="d" required></label>
+<label>Your address or area in Abuja<input name="a" required autocomplete="street-address"></label>
+<label>Notes (length, colour, extension)<textarea name="m" rows="3"></textarea></label>
+<button class="btn" type="submit">Send booking on WhatsApp</button>
+</form>
+</section>
+
+<section>
+<h2>How it works</h2>
+<ol class="how"><li>Choose a style or extension.</li><li>Send your request on WhatsApp.</li><li>We confirm price and time with you.</li><li>We come to your door, or deliver your order.</li></ol>
+</section>
+</main>
+<footer><div class="wrap"><strong>Debbies Beauty Empire</strong><br><a href="tel:+2347047299257">07047299257</a> · <a href="mailto:debbiesbeautyempire86@gmail.com">debbiesbeautyempire86@gmail.com</a></div></footer>
+
+<script>
+var WA="2347047299257",Q='"';
+/* Services: [category, photo name, [[style, price], ...]]. Photo goes in images/<photo name>.jpg */
+var S=[
+["Knotless braids","knotless",[["Small knotless 45"+Q,80000],["Small knotless 30"+Q,70000],["Medium knotless 30"+Q,65000],["Big box knotless 30"+Q,50000]]],
+["Fulani braids","fulani",[["Long Fulani braids",40000],["Short Fulani braids",25000],["Boho Fulani",50000]]],
+["Boho braids","boho",[["Boho braids 50"+Q,100000],["Boho braids 45"+Q,80000],["Boho braids 30"+Q,75000]]],
+["Popular braids","popular",[["Lemonade braids",30000],["Bora bora braids",120000],["Bone straight braid",100000],["Miracle knots",85000],["Jayda wayda braid",30000]]],
+["French curls","french-curls",[["Long French curls",70000],["Short French curls",35000]]],
+["Goddess braids","goddess",[["Long goddess braids",70000],["Short goddess braids",40000]]],
+["Twists","twists",[["Micro twist 20"+Q,200000],["Micro twist 15"+Q,150000],["Long twisting 45"+Q,65000],["Medium twisting 32"+Q,55000],["Short twist",40000]]],
+["Shuku","shuku",[["Shuku and base (long)",40000],["Shuku",35000],["Short shuku and base",25000],["Short shuku",20000]]],
+["For men","men",[["Fresh dreadlock",50000],["Relocking",30000],["Dread plus extension",80000],["Retwisting",25000],["Barrel twist",30000],["Flat twist",25000],["Stitch braids cornrow",20000],["Two step stitch braid",30000],["Kinky twist",35000]]]
+];
+/* Shop: [name, price]. Photo goes in images/<name in lowercase with dashes>.jpg */
+var P=[["French curls (1 bundle)",9000],["Italian curls (1 bundle)",10000],["Bone straight extension (1 bundle)",10000],["Deep wave extension (1 bundle)",9000],["Body wave extension (1 bundle)",9000],["Attachment big pack",10000],["Attachment small pack",6500],["Boho extension (1 pack)",8000],["Body wave extension (1 pack)",8000]];
+var fmt=function(n){return "₦"+n.toLocaleString("en-NG")};
+var slug=function(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")};
+function card(name,price,photo,btn,fn){
+ var d=document.createElement("div");d.className="item";
+ var im=document.createElement("div");im.className="img";
+ var sp=document.createElement("span");sp.textContent=name;im.appendChild(sp);
+ var i=new Image();i.alt=name;i.loading="lazy";i.onload=function(){im.appendChild(i)};i.src="images/"+photo+".jpg";
+ var b=document.createElement("div");b.className="body";
+ var h=document.createElement("h3");h.textContent=name;
+ var p=document.createElement("span");p.className="price";p.textContent=fmt(price);
+ var bt=document.createElement("button");bt.type="button";bt.textContent=btn;bt.onclick=fn;
+ b.appendChild(h);b.appendChild(p);b.appendChild(bt);d.appendChild(im);d.appendChild(b);return d}
+function fold(g){var k=g.children;if(k.length<=4)return;
+ for(var i=4;i<k.length;i++)k[i].classList.add("x");
+ var n=k.length-4,b=document.createElement("button");b.type="button";b.className="more";b.textContent="See more ("+n+")";
+ b.onclick=function(){var o=g.classList.toggle("open");b.textContent=o?"Show less":"See more ("+n+")"};
+ g.after(b)}
+var svc=document.getElementById("svc"),chips=document.getElementById("chips"),sel=document.getElementById("sel");
+S.forEach(function(c){
+ var id="c-"+slug(c[0]);
+ var a=document.createElement("a");a.href="#"+id;a.textContent=c[0];chips.appendChild(a);
+ var h=document.createElement("h3");h.className="cat";h.id=id;h.textContent=c[0];svc.appendChild(h);
+ var g=document.createElement("div");g.className="grid";svc.appendChild(g);
+ var og=document.createElement("optgroup");og.label=c[0];sel.appendChild(og);
+ c[2].forEach(function(s){
+  var label=s[0]+" ("+fmt(s[1])+")";
+  var o=document.createElement("option");o.textContent=label;o.value=label;og.appendChild(o);
+  g.appendChild(card(s[0],s[1],c[1],"Book",function(){sel.value=label;document.getElementById("book").scrollIntoView()}))});
+ fold(g);
+});
+var cart={},box=document.getElementById("products");
+P.forEach(function(p,i){box.appendChild(card(p[0],p[1],slug(p[0]),"Add to order",function(){cart[i]=(cart[i]||0)+1;draw()}))});
+fold(box);
+document.getElementById("clr").onclick=function(){cart={};draw()};
+function draw(){var n=0,t=0,l=[];Object.keys(cart).forEach(function(i){n+=cart[i];t+=cart[i]*P[i][1];l.push(cart[i]+" x "+P[i][0])});
+ document.getElementById("cart").style.display=n?"flex":"none";
+ document.getElementById("cnt").textContent=n+(n==1?" item":" items");
+ document.getElementById("tot").textContent="Total "+fmt(t)+" (excluding delivery)";
+ document.getElementById("send").href="https://wa.me/"+WA+"?text="+encodeURIComponent("Hello Debbies Beauty Empire, I would like to order:\n"+l.join("\n")+"\nTotal: "+fmt(t))}
+document.getElementById("bf").addEventListener("submit",function(e){e.preventDefault();var f=e.target;
+ var m="Hello Debbies Beauty Empire, I would like to book a home service.\nName: "+f.n.value+"\nStyle: "+f.s.value+"\nDate: "+f.d.value+"\nAddress: "+f.a.value+"\nNotes: "+f.m.value;
+ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")});
+</script>
+</body>
+</html>
